@@ -42,7 +42,7 @@ const MakeCoffee = () => {
     };
 
     return (
-        <div className="bg-gray-900 max-w-7xl mx-auto">
+        <div className="bg-gray-900 max-w-7xl h-screen mx-auto">
 
 
             <div className="h-full w-full">
