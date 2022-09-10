@@ -4,6 +4,7 @@ import StepperControl from "./Controls/StepperControl";
 import Complete from "./Steps/Complete";
 import Payment from "./Steps/Payment";
 import { UseContextProvider } from "../../Hooks/StepperContext";
+import Home from "./Steps/Home";
 // import ApplicationPreview from "./Steps/ApplicationPreview";
 
 
@@ -12,6 +13,7 @@ const MakeCoffee = () => {
 
 
     const steps = [
+        "Home",
         "Payment",
         "Complete",
     ];
@@ -21,8 +23,10 @@ const MakeCoffee = () => {
     const displayStep = (step) => {
         switch (step) {
             case 1:
-                return <Payment />;
+                return <Home />;
             case 2:
+                return <Payment />;
+            case 3:
                 return <Complete />;
             default:
         }
@@ -38,23 +42,23 @@ const MakeCoffee = () => {
     };
 
     return (
-        <div className="bg-slate-100 max-w-7xl mx-auto">
+        <div className="bg-gray-900 max-w-7xl mx-auto">
 
 
             <div className="h-full w-full">
                 <div className="card-body w-full">
-                    <h1 className="text-primary text-2xl font-bold text-center">
+                    <h1 className="text-white text-2xl font-bold text-center">
                         Please Choose Your Coffee
                     </h1>
                     {/* Stepper */}
-                    <div className="pb-5 px-5 lg:px-0 w-full lg:w-4/5 mx-auto">
+                    <div className="pb-0 px-5 lg:px-0 w-full lg:w-4/5 mx-auto">
                         <Stepper steps={steps} currentStep={currentStep} />
                     </div>
                     <div className="mx-auto rounded-2xl bg-white pb-2 shadow-xl md:w-4/5">
                         {/* Display Step */}
-                        <div className="horizontal container mt-5 ">
+                        <div className="horizontal container mt-2 ">
 
-                            <div className="my-10 p-10 ">
+                            <div className="my-0 p-7 ">
                                 <UseContextProvider>{displayStep(currentStep)}</UseContextProvider>
                             </div>
                         </div>
