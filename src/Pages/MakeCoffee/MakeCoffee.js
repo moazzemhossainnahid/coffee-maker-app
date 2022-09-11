@@ -55,9 +55,7 @@ const MakeCoffee = () => {
 
             <div className="h-full w-full">
                 <div className="card-body w-full">
-                    <h1 className="text-white text-2xl font-bold text-center">
-                        Please Choose Your Coffee
-                    </h1>
+                    {/* <h1 className="text-white text-2xl font-bold text-center"> Please Choose Your Coffee </h1> */}
                     {/* Stepper */}
                     <div className="pb-0 px-5 lg:px-0 w-full lg:w-4/5 mx-auto">
                         <Stepper steps={steps} currentStep={currentStep} />

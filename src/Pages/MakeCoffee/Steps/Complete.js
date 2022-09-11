@@ -1,15 +1,10 @@
 import React from 'react';
 import { useStepperContext } from '../../../Hooks/StepperContext';
-
 import Image from '../../../Images/coffee-logo.png';
 
 const Complete = () => {
-  const { userData, setUserData } = useStepperContext();
+  const { userData } = useStepperContext();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setUserData({ ...userData, [name]: value });
-  };
 
   console.log(userData);
 
@@ -22,14 +17,14 @@ const Complete = () => {
         </div>
 
         <div className="mt-3 text-2xl md:text-5xl font-bold uppercase text-rose-600">
-        Your Coffee is Ready
+        Your Coffee is Cooking
         </div>
         {/* <div className="text-lg font-semibold text-gray-500">
           Your Coffee is Ready.
         </div> */}
         <div className="mt-10">
           <button className="h-10 px-5 text-white bg-gray-700 transition-colors duration-150 border border-gray-300 rounded-lg focus:shadow-outline hover:bg-orange-500 hover:text-green-100">
-            Close
+            Back to Home
           </button>
         </div>
       </div>
