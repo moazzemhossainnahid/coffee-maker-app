@@ -81,7 +81,7 @@ const Preview = () => {
             <div className="h-full md:h-96 w-full flex flex-col justify-center items-center md:flex-row">
                 <div className="w-full md:w-3/6 pb-7">
                     <h3 className="text-4xl font-bold py-5 text-orange-500">Total Cost</h3>
-                    <h3 className="text-0xl md:text-7xl font-bold text-gray-800">{price}</h3>
+                    <h3 className="text-3xl md:text-7xl font-bold text-gray-800">{price}</h3>
                 </div>
                 <div className="w-full md:w-3/6 space-y-5 mx-auto py-7 px-5 md:pl-20 ">
                     <h3 className="text-4xl text-white">Hub: {Hub}</h3>

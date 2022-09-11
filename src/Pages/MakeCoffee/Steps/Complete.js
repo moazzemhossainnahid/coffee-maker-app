@@ -12,7 +12,7 @@ const Complete = () => {
     <div className="container md:mt-10">
       <div className="flex flex-col items-center">
 
-        <div className="-mt-20">
+        <div className="md:-mt-20">
           <img className='object-cover p-5 mx-auto w-full h-72' src={Image} alt="" />
         </div>
 
